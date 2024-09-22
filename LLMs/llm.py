@@ -11,7 +11,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 # Initialize LLM
-LLM = ChatGroq(model="llama-3.1-70b-versatile",
+LLM = ChatGroq(model="llama-3.1-8b-instant",
                     temperature=0)
 
 # LLM = ChatOpenAI(model="gpt-4o-2024-08-06",
