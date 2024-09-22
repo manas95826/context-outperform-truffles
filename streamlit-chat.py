@@ -18,7 +18,6 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
         
-word_limit = st.number_input("Enter the word limit for the output", min_value=100, step=100, value=200)
 
 # Accept user input
 if prompt := st.chat_input("What would you like me to write about?"):
@@ -34,7 +33,7 @@ if prompt := st.chat_input("What would you like me to write about?"):
         full_response = ""
         
         # Prepare the instruction with word limit
-        instruction = f"Write a {word_limit}-word analysis on the topic: {prompt}"
+        instruction = f"Write a 5000-word analysis on the topic: {prompt}"
         
         # Prepare context from previous messages
         context = "\n".join([f"{m['role']}: {m['content']}" for m in st.session_state.messages[-5:]])
