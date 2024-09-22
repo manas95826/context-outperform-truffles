@@ -19,13 +19,17 @@ This project leverages LangGraph to orchestrate a series of language model inter
 
 1. Set up your environment variables in a `.env` file:
    ```
-   OPENAI_API_KEY=your_openai_api_key
    GROQ_API_KEY=your_groq_api_key
    ```
 
-2. Run the main script:
+2. Install requirements
    ```
-   python -m agentwrite
+   pip install -m requirements.txt
+   ```
+
+3. Run the main script:
+   ```
+   streamlit run streamlit-chat.py
    ```
 
 
