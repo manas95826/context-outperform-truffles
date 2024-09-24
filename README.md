@@ -32,6 +32,14 @@ This project leverages LangGraph to orchestrate a series of language model inter
    streamlit run streamlit-chat.py
    ```
 
+## For claude:
+
+1. Replace api_key with claude api key from LLMs.claude-llm.py
+2. Run claude script:
+   ```
+   streamlit run claude-app.py
+   ```
+
 
 
 
