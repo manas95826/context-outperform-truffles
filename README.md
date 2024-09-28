@@ -17,27 +17,19 @@ This project leverages LangGraph to orchestrate a series of language model inter
 
 ## Usage
 
-1. Set up your environment variables in a `.env` file:
+1. Set up your api key in a `llm` file:
    ```
-   GROQ_API_KEY=your_groq_api_key
+   api_key=your_claude_api_key
    ```
 
 2. Install requirements
    ```
-   pip install -m requirements.txt
+   pip install -r requirements.txt
    ```
 
 3. Run the main script:
    ```
    streamlit run streamlit-chat.py
-   ```
-
-## For claude:
-
-1. Replace api_key with claude api key from LLMs.claude-llm.py
-2. Run claude script:
-   ```
-   streamlit run claude-app.py
    ```
 
 
