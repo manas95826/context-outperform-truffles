@@ -1,9 +1,6 @@
 import os
 from dotenv import load_dotenv
 
-from langchain_groq import ChatGroq
-from langchain_openai import ChatOpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_anthropic import ChatAnthropic
 
 LLM = ChatAnthropic(model='claude-3-opus-20240229',anthropic_api_key=api_key)
