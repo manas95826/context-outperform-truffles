@@ -3,7 +3,7 @@ import sys
 import os
 from dotenv import load_dotenv
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from LLMs.claude import LLM 
+from LLMs.llm import LLM 
 from graph import create_workflow  
 
 load_dotenv()
